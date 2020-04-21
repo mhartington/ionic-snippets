@@ -1,0 +1,37 @@
+snippet config
+  .config(function($stateProvider, $urlRouterProvider){
+  ${1}
+  }
+  ${0}
+
+snippet state
+  .state('${1}', {
+    url: "${2}",
+    templateUrl: "${3}"
+  })
+  ${0}
+
+snippet abstate
+  .state('${1}', {
+    url: "${2}",
+    abstract: true,
+    templateUrl: "${3}"
+  })
+  ${0}
+
+snippet nsstate
+  .state('${1}', {
+    url: '${2}',
+    views: {
+      '${3}': {
+        templateUrl: '${4}',
+        controller: '${5}'
+      }
+    }
+  })
+  ${0}
+
+snippet controller
+  .controller('${1}', function($scope${2}){
+    ${0}
+  })
